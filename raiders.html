@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>自由行攻略</title>
+
+    <!--给搜索引擎看的-->
+    <meta name="description" content="蜜月">
+    <!--可视区域宽度和缩放级别-->
+    <meta name="viewport" content="width=initial-scale=1, maximum-scale=1">
+    <!--删除苹果默认的工具栏、菜单栏-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!--控制状态栏显示样式，默认black和black-translucent-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!--格式检测：禁止将数字转化为拨号链接-->
+    <meta name="format-detection" content="telephone=no">
+
+    <!--SUI Mobile-->
+    <link rel="stylesheet" href="css/sm.min.css">
+    <link rel="stylesheet" href="css/sm-extend.min.css">
+
+    <link rel="stylesheet" href="css/raiders.css">
+
+    <!--iconfont-->
+    <!--<link rel="stylesheet" href="iconfont/iconfont.css">-->
+
+    <script src="js/zepto.min.js"></script>
+    <script src="js/sm.min.js"></script>
+    <script src="js/sm-extend.min.js"></script>
+</head>
+<body>
+<div class="page-group">
+    <div class="page page-current">
+
+        <!--标题栏-->
+        <header class="bar bar-nav">
+            <a href="#" class="icon icon-left pull-left back_btn" onclick="history.back(-1)"></a>
+            <a href="" class="button button-link button-nav pull-right" data-popup=".popup-about">
+                <span class="icon icon-search btn-menu"></span>
+            </a>
+            <h1 class="title">自由行攻略</h1>
+        </header>
+
+        <div class="content">
+
+            <!--工具栏-->
+            <nav class="nav">
+                <ul class="clear">
+                    <li><a href="">首页</a></li>
+                    <li><a href="">目的地</a></li>
+                    <li><a href="">攻略</a></li>
+                    <li><a href="">我的</a></li>
+                </ul>
+            </nav>
+
+            <!--pic-->
+            <div class="pic">
+                <img src="images/raiders/pic.jpeg" alt="">
+                <div class="pic-intro">
+                    <a class="intro-name" href="">
+                        新西兰
+                        <small><strong>365570</strong>张照片</small>
+                    </a>
+                    <ul class="clear">
+                        <li>
+                            <a href="">
+                                <i class="icon"></i>游记
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="icon"></i>城市
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="icon"></i>酒店
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="icon"></i>商城
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="icon"></i>景点
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--自由行特惠-->
+            <div class="odds list-block">
+                <h4>
+                    <span>自由行特惠</span>
+                </h4>
+                <a class="card">
+                    <div class="card-content">
+                        <div class="list-block media-list">
+                            <ul>
+                                <li class="item-content">
+                                    <div class="item-media">
+                                        <img src="images/raiders/odds-1.jpeg">
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-title-row">
+                                            <div class="item-title">住进风景里，写进故事里——新西兰住宿全攻略</div>
+                                        </div>
+                                        <div class="item-subtitle">一、新西兰住宿类型<br/>二、热门目的地住宿推荐</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+                <a class="card">
+                    <div class="card-content">
+                        <div class="list-block media-list">
+                            <ul>
+                                <li class="item-content">
+                                    <div class="item-media">
+                                        <img src="images/raiders/odds-2.jpeg">
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-title-row">
+                                            <div class="item-title">新西兰另类玩法——集齐三种神奇动物（彩虹温泉公园几维鸟、蒂阿瑙萤火虫洞、奥玛鲁企鹅）</div>
+                                        </div>
+                                        <div class="item-subtitle">为什么说去新西兰不应该错过这三种神奇动物？</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+                <a class="card">
+                    <div class="card-content">
+                        <div class="list-block media-list">
+                            <ul>
+                                <li class="item-content">
+                                    <div class="item-media">
+                                        <img src="images/raiders/odds-3.jpeg">
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-title-row">
+                                            <div class="item-title">老司机带你自驾新西兰，停车、加油、自驾线路一篇搞定！可定制！</div>
+                                        </div>
+                                        <div class="item-subtitle">一、第一次去新西兰，有哪些体验是必不可错过的？<br/>二、游览新西兰的最佳交通方式是什么呢？</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+                <div class="showMore">
+                    <a href="">查看更多</a>
+                </div>
+            </div>
+
+            <!--热门城市-->
+            <div class="hot list-block">
+                <h4>
+                    <span>热门城市</span>
+                </h4>
+                <div class="hotCity clear">
+                    <ul class="clear">
+                        <li>
+                            <a href="">
+                                <img src="images/raiders/hot-1.jpeg" alt="">
+                                <p class="city">奥克兰</p>
+                                <p><span>2832</span>人去过</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/raiders/hot-2.jpeg" alt="">
+                                <p class="city">皇后镇</p>
+                                <p><span>2137</span>人去过</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/raiders/hot-3.jpeg" alt="">
+                                <p class="city">基督城</p>
+                                <p><span>2337</span>人去过</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/raiders/hot-4.jpeg" alt="">
+                                <p class="city">蒂卡普</p>
+                                <p><span>1518</span>人去过</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="showMore">
+                    <a href="">查看更多</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        /*侧滑JS*/
+        $(document).on("click", ".btn-menu", function() {
+            $.openPanel("#panel");
+        });
+    </script>
+</body>
+</html>

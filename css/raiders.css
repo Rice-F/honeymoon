@@ -1,0 +1,230 @@
+@charset "UTF-8";
+
+/* reset */
+body,
+html {
+    font-family: sans-serif;       /*无衬线字体*/
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: #222;
+}
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: #fcb322;
+    outline: none;
+}
+ul {
+    list-style: none;
+}
+
+/* clear float */
+.clear:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* iconfont */
+.icon {
+    fill: currentColor;
+    overflow: hidden;
+}
+
+/* showMore */
+.showMore {
+    padding: 10px 0 20px;
+    text-align: center;
+}
+.showMore>a {
+    display: inline-block;
+    line-height: 42px;
+    font-size: .75rem;
+    letter-spacing: 1px;
+    color: #ff6a21;
+    border: 1px solid #ff6a21;
+    padding: 0 30px;
+}
+
+/* header */
+.bar {
+    position: relative;
+}
+.bar .title {
+    color: #ff6a21;
+    letter-spacing: 1px;
+}
+.bar a.button-link {
+    color: #666;
+}
+.bar a.button-link .icon {
+    font-size: 1rem;
+    padding: 0px .3rem;
+    color: #ff6a21;
+}
+
+/* 工具栏 */
+.nav ul {
+    margin: 0;
+    padding: 0;
+}
+.nav li{
+    float: left;
+    display: table-cell;
+    padding: 10px 0;
+    width: 25%;
+    background-color: #ff9d00;
+}
+.nav li>a {
+    display: block;
+    text-align: center;
+    font-size: .75rem;
+    letter-spacing: 1px;
+    color: #fff;
+    border-right: 1px solid #ffce80;
+}
+.nav ul li:last-child>a {
+    border: none;
+}
+
+/* pic */
+.pic {
+    position: relative;
+}
+.pic img {
+    width: 100%;
+}
+.pic-intro {
+    position: absolute;
+    bottom: .3rem;
+    left: 0;
+    right: 0;
+    padding: 0 .5rem;
+}
+.pic-intro a {
+    color: #fff;
+}
+.pic-intro .intro-name {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: .5rem 0;
+}
+.pic-intro .intro-name small{
+    margin-left: .5rem;
+    font-size: .6rem;
+    font-weight: normal;
+}
+.pic-intro ul {
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #999;
+}
+.pic-intro ul li{
+    float: left;
+    display: table-cell;
+}
+.pic-intro ul li>a {
+    display: inline-block;
+    padding: .5rem .5rem .5rem 0;
+    font-size: .75rem;
+}
+
+/* 自由行特惠 */
+.odds {
+    margin: .5rem 0 .5rem 0;
+}
+.odds h4 {
+    padding-left: .5rem;
+    margin: .5rem 0;
+}
+.odds h4 span {
+    border-left: 4px solid #ff6a21;
+    padding-left: .3rem;
+    margin: 0 0 .5rem 0;
+    font-size: .85rem;
+    font-weight: normal;
+    color: #222;
+}
+.odds a.card {
+    display: block;
+    padding: .15rem 0;
+    box-shadow: none;
+    background-color: transparent;
+}
+.odds .item-content {
+    padding-left: 0rem;
+}
+.odds .list-block.media-list .item-media {
+    padding: 0;
+}
+.odds .item-media img {
+    width: 6rem;
+}
+.odds .item-media+.item-inner {
+    margin-left: .5rem;
+    padding: 0;
+}
+.odds .media-list .item-title{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    white-space: pre-line;
+    font-size: .7rem;
+    color: #222;
+}
+.odds .list-block .item-subtitle {
+    margin-top: .5rem;
+    font-size: .6rem;
+    color: #999;
+}
+
+/* 热门城市 */
+.hot {
+    margin: .5rem 0 .5rem 0;
+}
+.hot h4 {
+    padding-left: .5rem;
+    margin: .5rem 0;
+}
+.hot h4 span {
+    border-left: 4px solid #ff6a21;
+    padding-left: .3rem;
+    margin: 0 0 .5rem 0;
+    font-size: .85rem;
+    font-weight: normal;
+    color: #222;
+}
+.hotCity {
+    padding-left:.5rem;
+}
+.hotCity ul li {
+    float: left;
+    width: 50%;
+    padding-right: .5rem;
+    margin-bottom: .5rem;
+}
+.hotCity ul li a {
+    display: inline-block;
+    text-align: center;
+}
+.hotCity ul li a img {
+    width: 100%;
+}
+.hotCity ul li a .city {
+    font-size: .75rem;
+    margin: 0;
+}
+.hotCity ul li a p {
+    font-size: .5rem;
+    margin: 0;
+}
+.hotCity ul li a p>span {
+    color: #ff6a21;
+}

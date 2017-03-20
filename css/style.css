@@ -10,6 +10,9 @@ html {
     margin: 0;
     padding: 0;
 }
+a {
+    color: #222;
+}
 a:hover,
 a:focus {
     text-decoration: none;
@@ -22,20 +25,26 @@ ul {
 
 /* iconfont */
 .icon {
-    width: 1em;
-    height: 1em;
-    vertical-align: -0.15em;
     fill: currentColor;
     overflow: hidden;
 }
 
 /* header */
+.bar .title {
+    color: #ff6a21;
+    font-weight: 600;
+}
 .bar a.button-link {
     color: #666;
 }
 .bar a.button-link .icon {
     font-size: 1.4rem;
     padding: 0px .2rem;
+}
+
+/* content */
+.content {
+    padding-bottom: 3rem;
 }
 
 /* swiper */
@@ -63,6 +72,65 @@ ul {
     position: relative;
 }
 
+/* 推荐攻略 */
+.list-block {
+    margin: .5rem 0;
+}
+.list-block h4 {
+    font-weight: normal;
+    padding: 0 .5rem;
+    margin: 0 0 .5rem 0;
+    text-align: left;
+}
+.list-block h4 span {
+    border-left: 4px solid #ff6a21;
+    padding-left: .3rem;
+}
+.list-block h4 a {
+    float: right;
+    color: #999;
+    font-size: .7rem;
+}
+.list-block .card {
+    margin-top: 0;
+    padding: .5rem;
+}
+.list-block .card .card-header {
+    padding: 0;
+}
+.list-block .card .card-content .item-content {
+    padding-left: 0;
+}
+.list-block .card .card-content .item-content .item-subtitle {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    white-space: pre-line;
+    font-size: .7rem;
+    color: #999;
+}
+.list-block .card .card-content .item-media img {
+    width: 6rem;
+}
+.list-block .card .card-content .item-inner {
+    padding-right: 0;
+}
+.list-block .card .card-footer {
+    min-height: auto;
+    padding: 0;
+}
+
+/* 工具栏 */
+nav.bar .tab-item{
+    color: #666;
+}
+.bar-tab .tab-item.active,
+.bar-tab .tab-item:active
+{
+    color: #ff6a21;
+}
+
 /* popup */
 .panel {
     box-shadow: -2px 2px 2px #e7e7e7;
@@ -76,16 +144,7 @@ ul {
     line-height: 2rem;
 }
 .panel .content-block ul li a {
-    color: #222;
+    color: #ff6a21;
     letter-spacing: 2px;
 }
 
-/* 工具栏 */
-nav.bar .tab-item{
-    color: #666;
-}
-.bar-tab .tab-item.active,
-.bar-tab .tab-item:active
-{
-    color: #ff6a21;
-}

@@ -1,0 +1,220 @@
+@charset "UTF-8";
+
+/* reset */
+body,
+html {
+    font-family: sans-serif;       /*无衬线字体*/
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: #222;
+}
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: #fcb322;
+    outline: none;
+}
+ul {
+    list-style: none;
+}
+
+/* iconfont */
+.icon {
+    fill: currentColor;
+    overflow: hidden;
+}
+
+/* showMore */
+.showMore {
+    padding: 10px 0 20px;
+    text-align: center;
+}
+.showMore>a {
+    display: inline-block;
+    line-height: 42px;
+    font-size: .75rem;
+    letter-spacing: 1px;
+    color: #ff6a21;
+    border: 1px solid #ff6a21;
+    padding: 0 30px;
+}
+
+/* header */
+.bar .title {
+    color: #ff6a21;
+    letter-spacing: 1px;
+}
+.bar a.button-link {
+    color: #666;
+}
+.bar a.button-link .icon {
+    font-size: 1rem;
+    padding: 0px .3rem;
+}
+.bar .searchbar {
+    background: transparent;
+}
+.searchbar .search-input {
+    border: 1px solid #ff6a21;
+}
+
+/* content */
+.content {
+    padding-bottom: 3rem;
+}
+
+/* nav */
+.nav {
+    position: relative;
+}
+
+/* 热门目的地 */
+.hot {
+    padding: .5rem 0 0 .5rem;
+    overflow: hidden;
+}
+.hot .content-block-title {
+    border-left: 4px solid #ff6a21;
+    padding: 0 .3rem;
+    margin: 0 0 .5rem 0;
+    font-size: .85rem;
+    font-weight: normal;
+    color: #222;
+}
+.hot .content-block-title a {
+    float: right;
+    color: #999;
+    font-size: .7rem;
+}
+.hot .card {
+    float: left;
+    width: 30.5%;
+    margin: 0 .5rem .5rem 0;
+    color: #666;
+    background: transparent;
+    box-shadow: none;
+}
+.hot .card .card-content-inner {
+    text-align: center;
+    padding: .2rem;
+}
+
+/* 自由行特惠 */
+.odds {
+    margin: 0 0 .5rem 0;
+}
+.odds h4 {
+    padding-left: .5rem;
+    margin: 0 0 .5rem 0;
+}
+.odds h4 span {
+    border-left: 4px solid #ff6a21;
+    padding-left: .3rem;
+    margin: 0 0 .5rem 0;
+    font-size: .85rem;
+    font-weight: normal;
+    color: #222;
+}
+.odds a.card {
+    display: block;
+}
+.odds .card-content {
+    padding: 0 .5rem;
+}
+.odds .item-content {
+    padding-left: 0rem;
+}
+.odds .list-block.media-list .item-media {
+    padding: .5rem 0
+}
+.odds .item-media img {
+    width: 6rem;
+}
+.odds .item-media+.item-inner {
+    margin-left: .5rem;
+    padding: .5rem 0;
+}
+.odds .media-list .item-title{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    white-space: pre-line;
+    font-size: .7rem;
+    color: #222;
+}
+.odds .list-block .item-subtitle {
+    position: absolute;
+    bottom: .5rem;
+    font-size: .65rem;
+    color: #ff6a21;
+}
+
+/* 问答 */
+.ask {
+    margin: 0 0 .5rem 0;
+}
+.ask h4 {
+    padding-left: .5rem;
+    margin: 0 0 .5rem 0;
+}
+.ask h4 span {
+    border-left: 4px solid #ff6a21;
+    padding-left: .3rem;
+    margin: 0 0 .5rem 0;
+    font-size: .85rem;
+    font-weight: normal;
+    color: #222;
+}
+.ask .card {
+    display: block;
+}
+.ask .card .card-header {
+    font-size: .75rem;
+}
+.ask .card .card-content .item-media img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+.ask .card .card-content .item-subtitle {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    white-space: pre-line;
+    font-size: .5rem;
+    color: #999;
+}
+
+/* 工具栏 */
+nav.bar .tab-item{
+    color: #666;
+}
+.bar-tab .tab-item.active,
+.bar-tab .tab-item:active
+{
+    color: #ff6a21;
+}
+
+/* popup */
+.panel {
+    box-shadow: -2px 2px 2px #e7e7e7;
+    width: 8rem;
+}
+.panel .content-block h3 {
+    font-size: .8rem;
+    font-weight: 500;
+    color: #ff6a21;
+}
+.panel .content-block span {
+    display: block;
+    margin-bottom: .6rem;
+    font-size: .6rem;
+    color: #666;
+}
