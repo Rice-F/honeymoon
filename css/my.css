@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+/* reset */
+body,
+html {
+    font-family: sans-serif;       /*无衬线字体*/
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: #222;
+}
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: #fcb322;
+    outline: none;
+}
+ul {
+    list-style: none;
+}
+
+/* clear float */
+.clear:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* iconfont */
+.icon {
+    fill: currentColor;
+    overflow: hidden;
+}
+
+/* header */
+header.bar .button-nav,
+header.bar .title {
+    color: #ff6a21;
+}
+header.bar .icon {
+    padding: .5rem 0;
+}
+header.bar .button-nav.pull-right {
+    margin-right: 0;
+}
+header.bar .title {
+    letter-spacing: 1px;
+}
+
+/* 用户 */
+.user {
+    width: 100%;
+    padding: 1rem 0;
+    background-image: url("../images/my/user-bg.jpg");
+    background-position: center left;
+    text-align: center;
+}
+.user img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: -1px 1px 5px #666;
+}
+.user .userName {
+    margin: 0;
+    color: #fff;
+    font-size: .7rem;
+}
+.user .userName span {
+    display: inline-block;
+    margin-left: .3rem;
+    width: 30px;
+    height: 15px;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 15px;
+    color: #7c9bc0;
+    background-color: #d6d6d6;
+    font-size: .5rem;
+}
+.user .intro {
+    margin: 0;
+    font-size: .6rem;
+    color: #999;
+}

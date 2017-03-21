@@ -1,374 +1,367 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-<head>
-    <meta charset="utf-8">
-    <title>自由行攻略</title>
+    <head>
+        <meta charset="utf-8">
+        <title>自由行攻略</title>
 
-    <!--给搜索引擎看的-->
-    <meta name="description" content="蜜月">
-    <!--可视区域宽度和缩放级别-->
-    <meta name="viewport" content="width=initial-scale=1, maximum-scale=1">
-    <!--删除苹果默认的工具栏、菜单栏-->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <!--控制状态栏显示样式，默认black和black-translucent-->
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <!--格式检测：禁止将数字转化为拨号链接-->
-    <meta name="format-detection" content="telephone=no">
+        <!--给搜索引擎看的-->
+        <meta name="description" content="蜜月">
+        <!--可视区域宽度和缩放级别-->
+        <meta name="viewport" content="width=initial-scale=1, maximum-scale=1">
+        <!--删除苹果默认的工具栏、菜单栏-->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <!--控制状态栏显示样式，默认black和black-translucent-->
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <!--格式检测：禁止将数字转化为拨号链接-->
+        <meta name="format-detection" content="telephone=no">
 
-    <!--SUI Mobile-->
-    <link rel="stylesheet" href="css/sm.min.css">
-    <link rel="stylesheet" href="css/sm-extend.min.css">
+        <!--SUI Mobile-->
+        <link rel="stylesheet" href="css/sm.min.css">
+        <link rel="stylesheet" href="css/sm-extend.min.css">
 
-    <link rel="stylesheet" href="css/raiders.css">
+        <link rel="stylesheet" href="css/raiders.css">
 
-    <!--iconfont-->
-    <!--<link rel="stylesheet" href="iconfont/iconfont.css">-->
+        <!--iconfont-->
+        <!--<link rel="stylesheet" href="iconfont/iconfont.css">-->
 
-    <script src="js/zepto.min.js"></script>
-    <script src="js/sm.min.js"></script>
-    <script src="js/sm-extend.min.js"></script>
-</head>
-<body>
-<div class="page-group">
-    <div class="page page-current">
+        <script src="js/zepto.min.js"></script>
+        <script src="js/sm.min.js"></script>
+        <script src="js/sm-extend.min.js"></script>
+    </head>
+    <body>
+        <div class="page-group">
+            <div class="page page-current">
 
-        <!--标题栏-->
-        <header class="bar bar-nav">
-            <a href="#" class="icon icon-left pull-left back_btn" onclick="history.back(-1)"></a>
-            <a href="" class="button button-link button-nav pull-right" data-popup=".popup-about">
-                <span class="icon icon-search btn-menu"></span>
-            </a>
-            <h1 class="title">自由行攻略</h1>
-        </header>
-
-        <div class="content">
-
-            <!--工具栏-->
-            <nav class="nav">
-                <ul class="clear">
-                    <li><a href="index.html">首页</a></li>
-                    <li><a href="destination.html">目的地</a></li>
-                    <li><a href="raiders.html">攻略</a></li>
-                    <li><a href="">我的</a></li>
-                </ul>
-            </nav>
-
-            <!--pic-->
-            <div class="pic">
-                <img src="images/raiders/pic.jpeg" alt="">
-                <div class="pic-intro">
-                    <a class="intro-name" href="">
-                        新西兰
-                        <small><strong>365570</strong>张照片</small>
+                <!--标题栏-->
+                <header class="bar bar-nav">
+                    <a href="#" class="icon icon-left pull-left back_btn" onclick="history.back(-1)"></a>
+                    <a href="" class="button button-link button-nav pull-right" data-popup=".popup-about">
+                        <span class="icon icon-search btn-menu"></span>
                     </a>
-                    <ul class="clear">
-                        <li>
-                            <a href="">
-                                <i class="icon"></i>游记
+                    <h1 class="title">自由行攻略</h1>
+                </header>
+
+                <div class="content">
+
+                    <!--工具栏-->
+                    <nav class="nav">
+                        <ul class="clear">
+                            <li><a href="index.html">首页</a></li>
+                            <li><a href="destination.html">目的地</a></li>
+                            <li><a href="raiders.html">攻略</a></li>
+                            <li><a href="my.html">我的</a></li>
+                        </ul>
+                    </nav>
+
+                    <!--pic-->
+                    <div class="pic">
+                        <img src="images/raiders/pic.jpeg" alt="">
+                        <div class="pic-intro">
+                            <a class="intro-name" href="">
+                                新西兰
+                                <small><strong>365570</strong>张照片</small>
                             </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <i class="icon"></i>城市
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <i class="icon"></i>酒店
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <i class="icon"></i>商城
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <i class="icon"></i>景点
-                            </a>
-                        </li>
-                    </ul>
+                            <ul class="clear">
+                                <li>
+                                    <a href="">
+                                        <i class="icon"></i>游记
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="icon"></i>城市
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="icon"></i>酒店
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="icon"></i>商城
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="icon"></i>景点
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!--自由行特惠-->
+                    <div class="odds list-block">
+                        <h4>
+                            <span>自由行特惠</span>
+                        </h4>
+                        <a class="card">
+                            <div class="card-content">
+                                <div class="list-block media-list">
+                                    <ul>
+                                        <li class="item-content">
+                                            <div class="item-media">
+                                                <img src="images/raiders/odds-1.jpeg">
+                                            </div>
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">住进风景里，写进故事里——新西兰住宿全攻略</div>
+                                                </div>
+                                                <div class="item-subtitle">一、新西兰住宿类型<br/>二、热门目的地住宿推荐</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card">
+                            <div class="card-content">
+                                <div class="list-block media-list">
+                                    <ul>
+                                        <li class="item-content">
+                                            <div class="item-media">
+                                                <img src="images/raiders/odds-2.jpeg">
+                                            </div>
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">新西兰另类玩法——集齐三种神奇动物（彩虹温泉公园几维鸟、蒂阿瑙萤火虫洞、奥玛鲁企鹅）</div>
+                                                </div>
+                                                <div class="item-subtitle">为什么说去新西兰不应该错过这三种神奇动物？</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card">
+                            <div class="card-content">
+                                <div class="list-block media-list">
+                                    <ul>
+                                        <li class="item-content">
+                                            <div class="item-media">
+                                                <img src="images/raiders/odds-3.jpeg">
+                                            </div>
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">老司机带你自驾新西兰，停车、加油、自驾线路一篇搞定！可定制！</div>
+                                                </div>
+                                                <div class="item-subtitle">一、第一次去新西兰，有哪些体验是必不可错过的？<br/>二、游览新西兰的最佳交通方式是什么呢？</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="showMore">
+                            <a href="">查看更多</a>
+                        </div>
+                    </div>
+
+                    <!--热门城市-->
+                    <div class="hot list-block">
+                        <h4>
+                            <span>热门城市</span>
+                        </h4>
+                        <div class="hotCity clear">
+                            <ul class="clear">
+                                <li>
+                                    <a href="">
+                                        <img src="images/raiders/hot-1.jpeg" alt="">
+                                        <p class="city">奥克兰</p>
+                                        <p><span>2832</span>人去过</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/raiders/hot-2.jpeg" alt="">
+                                        <p class="city">皇后镇</p>
+                                        <p><span>2137</span>人去过</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/raiders/hot-3.jpeg" alt="">
+                                        <p class="city">基督城</p>
+                                        <p><span>2337</span>人去过</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="images/raiders/hot-4.jpeg" alt="">
+                                        <p class="city">蒂卡普</p>
+                                        <p><span>1518</span>人去过</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="showMore">
+                            <a href="">查看更多</a>
+                        </div>
+                    </div>
+
+                    <!--畅销酒店-->
+                    <div class="hotel list-block">
+                        <h4>
+                            <span>畅销酒店排行</span>
+                        </h4>
+                        <a href="" class="card">
+                            <div class="card-content">
+                                <div class="list-block media-list">
+                                    <ul>
+                                        <li class="item-content">
+                                            <div class="item-media">
+                                                <img src="images/raiders/hotel-1.jpeg">
+                                            </div>
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">闪亮之星海滨酒店 Shining Star Beachfront Accommodation</div>
+                                                </div>
+                                                <div class="item-subtitle"><span>128</span>条点评</div>
+                                                <div class="item-subtitle"><span>￥718</span>起</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                找不到比这儿更好的小木屋了，干净、温馨，面向大海，花花草草打理的非常美，而且还养有小羊、羊驼和马，各一只的样子，没有味道。
+                            </div>
+                        </a>
+                        <a href="" class="card">
+                            <div class="card-content">
+                                <div class="list-block media-list">
+                                    <ul>
+                                        <li class="item-content">
+                                            <div class="item-media">
+                                                <img src="images/raiders/hotel-2.jpeg">
+                                            </div>
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">里斯酒店&豪华公寓 The Rees Hotel & Luxury Apartments</div>
+                                                </div>
+                                                <div class="item-subtitle"><span>169</span>条点评</div>
+                                                <div class="item-subtitle"><span>￥1263</span>起</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                新西兰之旅的尾声，唯一一次的酒店就是Rees! 特别精彩！湖景房免费升级成有按摩浴缸的大湖景房，精致超美！夜晚的星空也很漂亮。服务超一流，停车免费，有班车每小时往返皇后镇镇中心，我们只住了两晚，希望下一次多停留几天，慢慢欣赏这儿的美！ 美中不足的是只有king bed, 没有小朋友的床。
+                            </div>
+                        </a>
+                        <div class="showMore">
+                            <a href="">查看更多</a>
+                        </div>
+                    </div>
+
+                    <!--机加酒-->
+                    <div class="plane odds list-block">
+                        <h4>
+                            <span>机加酒</span>
+                        </h4>
+                        <a class="card">
+                            <div class="card-content">
+                                <div class="list-block media-list">
+                                    <ul>
+                                        <li class="item-content">
+                                            <div class="item-media">
+                                                <img src="images/raiders/plane-1.jpeg">
+                                            </div>
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">香港往返澳大利亚+新西兰12天10晚（含签证+含小费+圣派翠克大教堂+爱歌顿农庄+黄金海岸+观光游船悉尼港+外观悉尼歌剧院+热带雨林+玻璃底船+珊瑚礁）</div>
+                                                </div>
+                                                <div class="item-subtitle"><span>￥17380</span>起/人</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card">
+                            <div class="card-content">
+                                <div class="list-block media-list">
+                                    <ul>
+                                        <li class="item-content">
+                                            <div class="item-media">
+                                                <img src="images/raiders/plane-2.bmp">
+                                            </div>
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">广州直飞新西兰8-10天自由行（入基督城出奥克兰或基督城往返或入奥克兰出基督城+赠送新西兰个签）</div>
+                                                </div>
+                                                <div class="item-subtitle"><span>￥7399</span>起/人</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card">
+                            <div class="card-content">
+                                <div class="list-block media-list">
+                                    <ul>
+                                        <li class="item-content">
+                                            <div class="item-media">
+                                                <img src="images/raiders/plane-3.jpeg">
+                                            </div>
+                                            <div class="item-inner">
+                                                <div class="item-title-row">
+                                                    <div class="item-title">上海出发新西兰南北岛5晚8天半自由行（1天自由行）</div>
+                                                </div>
+                                                <div class="item-subtitle"><span>￥12350</span>起/人</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="showMore">
+                            <a href="">查看更多</a>
+                        </div>
+                    </div>
+
+                    <!--热门游记-->
+                    <div class="travels odds list-block">
+                        <h4>
+                            <span>热门游记</span>
+                        </h4>
+                        <a class="card demo-card-header-pic">
+                            <div valign="bottom" class="card-header color-white no-border no-padding">
+                                <img class='card-cover' src="images/raiders/travels-1.jpeg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <div class="card-content-inner">
+                                    <p class="color-gray">
+                                        <span>29</span>/Nov.2016 25598浏览
+                                    </p>
+                                    <p class="card-text">许你一片清澈之地-----记喵小咪和叽先森的炫彩中土之旅（新西兰南北岛3000公里自驾行）</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card demo-card-header-pic">
+                            <div valign="bottom" class="card-header color-white no-border no-padding">
+                                <img class='card-cover' src="images/raiders/travels-2.jpeg" alt="">
+                            </div>
+                            <div class="card-content">
+                                <div class="card-content-inner">
+                                    <p class="color-gray">
+                                        <span>29</span>/Sep.2016 40460浏览
+                                    </p>
+                                    <p class="card-text">极限运动的天堂——新西兰南岛自驾9日2700km（跳伞、开飞机、海钓、星空婚纱、延时）</p>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="showMore">
+                            <a href="">查看更多</a>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
-
-            <!--自由行特惠-->
-            <div class="odds list-block">
-                <h4>
-                    <span>自由行特惠</span>
-                </h4>
-                <a class="card">
-                    <div class="card-content">
-                        <div class="list-block media-list">
-                            <ul>
-                                <li class="item-content">
-                                    <div class="item-media">
-                                        <img src="images/raiders/odds-1.jpeg">
-                                    </div>
-                                    <div class="item-inner">
-                                        <div class="item-title-row">
-                                            <div class="item-title">住进风景里，写进故事里——新西兰住宿全攻略</div>
-                                        </div>
-                                        <div class="item-subtitle">一、新西兰住宿类型<br/>二、热门目的地住宿推荐</div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </a>
-                <a class="card">
-                    <div class="card-content">
-                        <div class="list-block media-list">
-                            <ul>
-                                <li class="item-content">
-                                    <div class="item-media">
-                                        <img src="images/raiders/odds-2.jpeg">
-                                    </div>
-                                    <div class="item-inner">
-                                        <div class="item-title-row">
-                                            <div class="item-title">新西兰另类玩法——集齐三种神奇动物（彩虹温泉公园几维鸟、蒂阿瑙萤火虫洞、奥玛鲁企鹅）</div>
-                                        </div>
-                                        <div class="item-subtitle">为什么说去新西兰不应该错过这三种神奇动物？</div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </a>
-                <a class="card">
-                    <div class="card-content">
-                        <div class="list-block media-list">
-                            <ul>
-                                <li class="item-content">
-                                    <div class="item-media">
-                                        <img src="images/raiders/odds-3.jpeg">
-                                    </div>
-                                    <div class="item-inner">
-                                        <div class="item-title-row">
-                                            <div class="item-title">老司机带你自驾新西兰，停车、加油、自驾线路一篇搞定！可定制！</div>
-                                        </div>
-                                        <div class="item-subtitle">一、第一次去新西兰，有哪些体验是必不可错过的？<br/>二、游览新西兰的最佳交通方式是什么呢？</div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </a>
-                <div class="showMore">
-                    <a href="">查看更多</a>
-                </div>
-            </div>
-
-            <!--热门城市-->
-            <div class="hot list-block">
-                <h4>
-                    <span>热门城市</span>
-                </h4>
-                <div class="hotCity clear">
-                    <ul class="clear">
-                        <li>
-                            <a href="">
-                                <img src="images/raiders/hot-1.jpeg" alt="">
-                                <p class="city">奥克兰</p>
-                                <p><span>2832</span>人去过</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img src="images/raiders/hot-2.jpeg" alt="">
-                                <p class="city">皇后镇</p>
-                                <p><span>2137</span>人去过</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img src="images/raiders/hot-3.jpeg" alt="">
-                                <p class="city">基督城</p>
-                                <p><span>2337</span>人去过</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img src="images/raiders/hot-4.jpeg" alt="">
-                                <p class="city">蒂卡普</p>
-                                <p><span>1518</span>人去过</p>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="showMore">
-                    <a href="">查看更多</a>
-                </div>
-            </div>
-
-            <!--畅销酒店-->
-            <div class="hotel list-block">
-                <h4>
-                    <span>畅销酒店排行</span>
-                </h4>
-                <a href="" class="card">
-                    <div class="card-content">
-                        <div class="list-block media-list">
-                            <ul>
-                                <li class="item-content">
-                                    <div class="item-media">
-                                        <img src="images/raiders/hotel-1.jpeg">
-                                    </div>
-                                    <div class="item-inner">
-                                        <div class="item-title-row">
-                                            <div class="item-title">闪亮之星海滨酒店 Shining Star Beachfront Accommodation</div>
-                                        </div>
-                                        <div class="item-subtitle"><span>128</span>条点评</div>
-                                        <div class="item-subtitle"><span>￥718</span>起</div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="card-footer">
-                        找不到比这儿更好的小木屋了，干净、温馨，面向大海，花花草草打理的非常美，而且还养有小羊、羊驼和马，各一只的样子，没有味道。
-                    </div>
-                </a>
-                <a href="" class="card">
-                    <div class="card-content">
-                        <div class="list-block media-list">
-                            <ul>
-                                <li class="item-content">
-                                    <div class="item-media">
-                                        <img src="images/raiders/hotel-2.jpeg">
-                                    </div>
-                                    <div class="item-inner">
-                                        <div class="item-title-row">
-                                            <div class="item-title">里斯酒店&豪华公寓 The Rees Hotel & Luxury Apartments</div>
-                                        </div>
-                                        <div class="item-subtitle"><span>169</span>条点评</div>
-                                        <div class="item-subtitle"><span>￥1263</span>起</div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="card-footer">
-                        新西兰之旅的尾声，唯一一次的酒店就是Rees! 特别精彩！湖景房免费升级成有按摩浴缸的大湖景房，精致超美！夜晚的星空也很漂亮。服务超一流，停车免费，有班车每小时往返皇后镇镇中心，我们只住了两晚，希望下一次多停留几天，慢慢欣赏这儿的美！ 美中不足的是只有king bed, 没有小朋友的床。
-                    </div>
-                </a>
-                <div class="showMore">
-                    <a href="">查看更多</a>
-                </div>
-            </div>
-
-            <!--机加酒-->
-            <div class="plane odds list-block">
-                <h4>
-                    <span>机加酒</span>
-                </h4>
-                <a class="card">
-                    <div class="card-content">
-                        <div class="list-block media-list">
-                            <ul>
-                                <li class="item-content">
-                                    <div class="item-media">
-                                        <img src="images/raiders/plane-1.jpeg">
-                                    </div>
-                                    <div class="item-inner">
-                                        <div class="item-title-row">
-                                            <div class="item-title">香港往返澳大利亚+新西兰12天10晚（含签证+含小费+圣派翠克大教堂+爱歌顿农庄+黄金海岸+观光游船悉尼港+外观悉尼歌剧院+热带雨林+玻璃底船+珊瑚礁）</div>
-                                        </div>
-                                        <div class="item-subtitle"><span>￥17380</span>起/人</div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </a>
-                <a class="card">
-                    <div class="card-content">
-                        <div class="list-block media-list">
-                            <ul>
-                                <li class="item-content">
-                                    <div class="item-media">
-                                        <img src="images/raiders/plane-2.bmp">
-                                    </div>
-                                    <div class="item-inner">
-                                        <div class="item-title-row">
-                                            <div class="item-title">广州直飞新西兰8-10天自由行（入基督城出奥克兰或基督城往返或入奥克兰出基督城+赠送新西兰个签）</div>
-                                        </div>
-                                        <div class="item-subtitle"><span>￥7399</span>起/人</div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </a>
-                <a class="card">
-                    <div class="card-content">
-                        <div class="list-block media-list">
-                            <ul>
-                                <li class="item-content">
-                                    <div class="item-media">
-                                        <img src="images/raiders/plane-3.jpeg">
-                                    </div>
-                                    <div class="item-inner">
-                                        <div class="item-title-row">
-                                            <div class="item-title">上海出发新西兰南北岛5晚8天半自由行（1天自由行）</div>
-                                        </div>
-                                        <div class="item-subtitle"><span>￥12350</span>起/人</div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </a>
-                <div class="showMore">
-                    <a href="">查看更多</a>
-                </div>
-            </div>
-
-            <!--热门游记-->
-            <div class="travels odds list-block">
-                <h4>
-                    <span>热门游记</span>
-                </h4>
-                <a class="card demo-card-header-pic">
-                    <div valign="bottom" class="card-header color-white no-border no-padding">
-                        <img class='card-cover' src="images/raiders/travels-1.jpeg" alt="">
-                    </div>
-                    <div class="card-content">
-                        <div class="card-content-inner">
-                            <p class="color-gray">
-                                <span>29</span>/Nov.2016 25598浏览
-                            </p>
-                            <p class="card-text">许你一片清澈之地-----记喵小咪和叽先森的炫彩中土之旅（新西兰南北岛3000公里自驾行）</p>
-                        </div>
-                    </div>
-                </a>
-                <a class="card demo-card-header-pic">
-                    <div valign="bottom" class="card-header color-white no-border no-padding">
-                        <img class='card-cover' src="images/raiders/travels-2.jpeg" alt="">
-                    </div>
-                    <div class="card-content">
-                        <div class="card-content-inner">
-                            <p class="color-gray">
-                                <span>29</span>/Sep.2016 40460浏览
-                            </p>
-                            <p class="card-text">极限运动的天堂——新西兰南岛自驾9日2700km（跳伞、开飞机、海钓、星空婚纱、延时）</p>
-                        </div>
-                    </div>
-                </a>
-                <div class="showMore">
-                    <a href="">查看更多</a>
-                </div>
-            </div>
-
-
         </div>
-    </div>
-
-
-    <script>
-        /*侧滑JS*/
-        $(document).on("click", ".btn-menu", function() {
-            $.openPanel("#panel");
-        });
-    </script>
-</body>
+    </body>
 </html>
