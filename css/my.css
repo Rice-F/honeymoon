@@ -22,6 +22,9 @@ a:focus {
 ul {
     list-style: none;
 }
+.content {
+    background-color: #fff;
+}
 
 /* clear float */
 .clear:after {
@@ -86,4 +89,26 @@ header.bar .title {
     margin: 0;
     font-size: .6rem;
     color: #999;
+}
+
+/* order */
+.home-order .bar {
+    position: inherit;
+    height: 3rem;
+    padding-top: .1rem;
+}
+.home-order .bar .tab-item {
+    color: #333;
+}
+
+/* list */
+.home-list .list-block {
+    margin: .5rem 0;
+}
+.home-list .list-block .item-content {
+    padding-left: .5rem;
+    font-size: .7rem;
+}
+.home-list .list-block .item-content .icon {
+    color: #ff6a21;
 }
