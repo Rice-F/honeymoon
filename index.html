@@ -63,7 +63,7 @@
                     </div>
 
                     <!--入口工具-->
-                    <nav class="nav bar bar-tab">
+                    <nav class="nav bar bar-tab clear">
                         <a class="tab-item external" href="#">
                             <span class="icon iconfont icon-gonglve"></span>
                             <span class="tab-label">攻略</span>
@@ -91,6 +91,10 @@
                         <a class="tab-item external" href="#">
                             <span class="icon iconfont icon-ditu"></span>
                             <span class="tab-label">地图</span>
+                        </a>
+                        <a class="tab-item external" href="#">
+                            <span class="icon iconfont icon-youhuiquan"></span>
+                            <span class="tab-label">优惠券</span>
                         </a>
                     </nav>
 
@@ -277,54 +281,53 @@
 
         <script>
             $(function(){
-//                'use strict';
+                'use strict';
 
-                /*侧滑JS*/
+                //popup
                 $(document).on("click", ".btn-menu", function() {
                     $.openPanel("#panel");
                 });
 
-                //幻灯片
-                $(function() {
-                    $(".swiper-container").swiper({
-                            autoplay:3000,
-                            loop:true
-                        }
-                    );
-                });
+                //swiper
+                $(".swiper-container").swiper({
+                        autoplay:3000,
+                        loop:true
+                    }
+                );
 
-                // 加载flag
+                // lodaing
                 var loading = false;
-                var $card = $(".strategy>.list-block div.card");
-                var el = $(".strategy>.list-block");
+                var $cards = $(".strategy>.list-block div.card");
+                var $el = $(".strategy>.list-block");
+
                 function addItems() {
-                    $card.each(function(){
-                        el.append( '<div class="card">' + $(this).html() + '</div>');
+                    $cards.each(function(){
+                        $el.append( '<div class="card">' + $(this).html() + '</div>');
                     })
+                }
 
+                    // 注册'infinite'事件处理函数
+                    $(document).on('infinite', 'div.infinite-scroll',function() {
+                        // 如果正在加载，则退出
+                        if (loading) return;
 
-                // 注册'infinite'事件处理函数
-                $(document).on('infinite', 'div.infinite-scroll',function() {
-                    // 如果正在加载，则退出
-                    if (loading) return;
+                        // 设置flag
+                        loading = true;
 
-                    // 设置flag
-                    loading = true;
+                        // 模拟1s的加载过程
+                        setTimeout(function() {
+                            // 重置加载flag
+                            loading = false;
 
-                    // 模拟1s的加载过程
-                    setTimeout(function() {
-                        // 重置加载flag
-                        loading = false;
+                            // 添加新条目
+                            addItems();
+                            //容器发生改变,如果是js滚动，需要刷新滚动
+                            $.refreshScroller();
+                        }, 1000);
+                    });
 
-                        // 添加新条目
-                        addItems();
-                        //容器发生改变,如果是js滚动，需要刷新滚动
-                        $.refreshScroller();
-                    }, 1000);
-                });
-
-                $.init();
-            })
+                    $.init();
+            });
         </script>
 
 

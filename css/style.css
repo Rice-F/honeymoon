@@ -23,6 +23,13 @@ ul {
     list-style: none;
 }
 
+/* clear float */
+.clear:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
 /* iconfont */
 .icon {
     fill: currentColor;
@@ -70,6 +77,24 @@ ul {
 /* nav */
 .nav {
     position: relative;
+    padding: 0 .5rem 1.1rem;
+    height: auto;
+}
+.nav .tab-item {
+    display: inline-block;
+    width: 23%;
+    height: auto;
+    padding: .5rem 0;
+}
+.nav .tab-item>span.icon {
+    font-size: 1.5rem;
+    height: auto;
+    line-height: inherit;
+    color: #ff9d00;
+}
+.nav .tab-label {
+    color: #333;
+    letter-spacing: 1px;
 }
 
 /* 推荐攻略 */
@@ -123,12 +148,10 @@ ul {
 
 /* 工具栏 */
 nav.bar .tab-item{
-    color: #666;
-}
-.bar-tab .tab-item.active,
-.bar-tab .tab-item:active
-{
     color: #ff6a21;
+}
+nav.bar-tab .tab-item.active {
+    color: #ff9d00;
 }
 
 /* popup */

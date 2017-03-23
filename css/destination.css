@@ -69,14 +69,34 @@ ul {
 }
 
 /* nav */
+/* nav */
 .nav {
     position: relative;
+    padding: 0 .5rem;
+    height: auto;
+}
+.nav .tab-item {
+    display: inline-block;
+    width: 23%;
+    height: auto;
+    padding: .5rem 0;
+}
+.nav .tab-item>span.icon {
+    font-size: 1.5rem;
+    height: auto;
+    line-height: inherit;
+    color: #ff9d00;
+}
+.nav .tab-label {
+    color: #333;
+    letter-spacing: 1px;
 }
 
 /* 热门目的地 */
 .hot {
     padding: .5rem 0 0 .5rem;
     overflow: hidden;
+    margin: .5rem 0 0 0;
 }
 .hot .content-block-title {
     border-left: 4px solid #ff6a21;
@@ -194,12 +214,11 @@ ul {
 
 /* 工具栏 */
 nav.bar .tab-item{
-    color: #666;
-}
-.bar-tab .tab-item.active,
-.bar-tab .tab-item:active
-{
     color: #ff6a21;
+}
+.bar-tab .tab-item.active
+{
+    color: #ff9d00;
 }
 
 /* popup */

@@ -98,7 +98,7 @@ header.bar .title {
     padding-top: .1rem;
 }
 .home-order .bar .tab-item {
-    color: #333;
+    color: #666;
 }
 
 /* list */
@@ -111,4 +111,13 @@ header.bar .title {
 }
 .home-list .list-block .item-content .icon {
     color: #ff6a21;
+}
+
+/* 工具栏 */
+nav.bar .tab-item{
+    color: #ff6a21;
+}
+.bar-tab .tab-item.active
+{
+    color: #ff9d00;
 }
